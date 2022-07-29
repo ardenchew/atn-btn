@@ -7,3 +7,5 @@ jobs:
       - run: echo "The job was automatically tirggered by a ${{ github.event_name }} event."
       - name: Python Linter
         uses: sunnysid3up/python-linter@v0.1-beta.7
+        with:
+          source: "api"
