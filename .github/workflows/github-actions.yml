@@ -1,2 +1,9 @@
-- name: Python Linter
-  uses: sunnysid3up/python-linter@v0.1-beta.7
+name: Linter
+on: [push]
+jobs:
+  Python-Linter:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The job was automatically tirggered by a ${{ github.event_name }} event."
+      - name: Python Linter
+        uses: sunnysid3up/python-linter@v0.1-beta.7
