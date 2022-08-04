@@ -1,5 +1,6 @@
 type User {
     id: ID!
+    email: String
 }
 
 type Query {
@@ -7,5 +8,5 @@ type Query {
 }
 
 type Mutation {
-    createUser(id: ID!): User!
+    createUser(email: String): User!
 }
